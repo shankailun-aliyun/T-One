@@ -8,6 +8,12 @@ inputs:
   token:
     description: "Token for the API"
     required: true
+  workspace:
+    description: "Workspace for the API"
+    required: true
+  template:
+    description: "Template for the API"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
