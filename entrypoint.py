@@ -21,7 +21,7 @@ def create_job_by_template():
         "signature": get_token(username, token),
         "name": "github action test",
         "template": template,
-        "workspace": "workspace"
+        "workspace": workspace
     }
     url = 'https://tone.openanolis.cn/api/job/create/'
     try:
