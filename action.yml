@@ -1,0 +1,13 @@
+name: "Create T-One Job by Template"
+description: "Creates a job using the tone.openanolis.cn API."
+author: "fubing"
+inputs:
+  username:
+    description: "Username for the API"
+    required: true
+  token:
+    description: "Token for the API"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
