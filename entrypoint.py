@@ -14,12 +14,14 @@ def create_job_by_template():
   
     username = os.environ.get('INPUT_USERNAME')
     token = os.environ.get('INPUT_TOKEN')
+    workspace = os.environ.get('INPUT_WORKSPACE')
+    template = os.environ.get('INPUT_TEMPLATE')
     data = {
         "username": username,
         "signature": get_token(username, token),
         "name": "github action test",
-        "template": "create_job_template",
-        "workspace": "platform_test"
+        "template": template,
+        "workspace": "workspace"
     }
     url = 'https://tone.openanolis.cn/api/job/create/'
     try:
